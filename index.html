@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Handle - Home</title>
     <!-- ========== All Css Link  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- ========== Navbar Area Section Start ==========  -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <!-- ===== Logo Here ===== -->
@@ -31,10 +31,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#banner_slider">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#venue_section">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service_offering_section">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
             </li>
           </ul>
         </div>
@@ -148,37 +154,7 @@
                 </div>
               </div>
 
-              <div class="venue_ecosystem">
-                <p>Served as an Ecosystem</p>
-                <ul>
-                  <li><img src="assets/img/venue/ads_1.png" alt="add" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_2.png" alt="ezexpo" />
-                  </li>
-                  <li><img src="assets/img/venue/ads_3.png" alt="bind" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_4.png" alt="circle" />
-                  </li>
-                  <li><img src="assets/img/venue/ads_1.png" alt="add" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_2.png" alt="ezexpo" />
-                  </li>
-                  <li><img src="assets/img/venue/ads_3.png" alt="bind" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_4.png" alt="circle" />
-                  </li>
-                </ul>
-                <ul class="mt-3">
-                  <li><img src="assets/img/venue/ads_1.png" alt="add" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_2.png" alt="ezexpo" />
-                  </li>
-                  <li><img src="assets/img/venue/ads_3.png" alt="bind" /></li>
-                  <li>
-                    <img src="assets/img/venue/ads_4.png" alt="circle" />
-                  </li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -370,205 +346,64 @@
       </div>
     </section>
 
-    <section id="sister_companies_section">
-      <div class="sister_container">
-        <!-- Header -->
-        <div class="sister_header">
-          <!-- <h1>HandLE</h1> -->
-          <h2><em>Sister Companies at a Glance</em></h2>
-        </div>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-lg-8">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="text-muted">Feel free to reach out to us for any inquiries or collaborations.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- Contact Info Boxes -->
+      <div class="col-md-8 mb-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+  <div class="ratio ratio-16x9">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902256025303!2d90.39286931537668!3d23.81033299466469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b08b2e2f3f%3A0xabcdef1234567890!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
 
-        <!-- Company Grid -->
-        <div class="company_grid_j">
-          <div class="row">
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="EZEXPO" />
-                <p class="company_title">Event Rental Platform</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_2.png" alt="FOX" />
-                <p class="company_title">Car Rental Company</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_3.png" alt="SJS" />
-                <p class="company_title">Real Estate Crowdfunding Services</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_4.png" alt="EastBreeze" />
-                <p class="company_title">Management Consultancy</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Bind" />
-                <p class="company_title">Communication Agency</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Bind" />
-                <p class="company_title">Communication Agency</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Add+" />
-                <p class="company_title">Event Management</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Innovation Zero" />
-                <p class="company_title">B2B Event</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="DE" />
-                <p class="company_title">Event Production</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="VON" />
-                <p class="company_title">Accounting Platform</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Fashion Brand" />
-                <p class="company_title">Fashion Brand</p>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6">
-              <div class="company_box">
-                <img src="assets/img/venue/ads_1.png" alt="Event Consultancy" />
-                <p class="company_title">Event Consultancy</p>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card mb-3 mb-lg-5 border-0 shadow-sm text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-geo-alt fs-2 text-primary"></i>
           </div>
+          <h5 class="fw-bold">Our Address</h5>
+          <p class="text-muted mb-0">123 Street Name, City, Country</p>
+        </div>
+        <div class="card mb-3 mb-lg-5 border-0 shadow-sm text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-telephone fs-2 text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Phone</h5>
+          <a href="tel:00000000" class="text-muted mb-0">+123 456 7890</a>
+        </div>
+        <div class="card  border-0 shadow-sm text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-envelope fs-2 text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Email</h5>
+          <a href="mailto:hello@handle.com" class="text-muted mb-0">hello@handle.com</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="facility_management_section">
-      <div class="facility_container">
-        <!-- Header -->
-        <div class="facility_header">
-          <!-- <h1>HandLE</h1> -->
-          <h2><em>Our Facility Management Arm</em></h2>
-        </div>
-
-        <!-- Content -->
-        <div class="facility_content">
-          <!-- Left Side -->
-          <div class="facility_left text-center">
-            <img src="assets/img/ocs.png" alt="OCS Logo" class="ocs_logo" />
-
-            <div class="iso_badges">
-              <img width="100%" src="assets/img/Picture1.png" alt="ISO 41001" />
-            </div>
-          </div>
-
-          <!-- Right Side -->
-          <div class="facility_right">
-            <div class="facility_partner_img">
-              <div class="overlay_text">Strategic Partner for FM</div>
-            </div>
-
-            <div class="core_services_box">
-              <h3>Core Services</h3>
-              <div class="core_services_grid">
-                <div class="row">
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img src="assets/img/venue/ads_1.png" alt="Facility" />
-                      <p>Facility<br />Management</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img src="assets/img/venue/ads_1.png" alt="Cleaning" />
-                      <p>Cleaning</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img
-                        src="assets/img/venue/ads_1.png"
-                        alt="Hard Services"
-                      />
-                      <p>Hard<br />Services</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img src="assets/img/venue/ads_1.png" alt="Security" />
-                      <p>Security</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img src="assets/img/venue/ads_1.png" alt="Catering" />
-                      <p>Catering</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img
-                        src="assets/img/venue/ads_1.png"
-                        alt="Pest Control"
-                      />
-                      <p>Pest<br />Control</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img
-                        src="assets/img/venue/ads_1.png"
-                        alt="Carbon & Energy"
-                      />
-                      <p>Carbon & Energy<br />Management</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img
-                        src="assets/img/venue/ads_1.png"
-                        alt="Front of House"
-                      />
-                      <p>Front of<br />House</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img src="assets/img/venue/ads_1.png" alt="Landscaping" />
-                      <p>Landscaping</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-6">
-                    <div class="core_service_item">
-                      <img
-                        src="assets/img/venue/ads_1.png"
-                        alt="Waste Management"
-                      />
-                      <p>Waste<br />Management</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Footer -->
+<footer class="bg-dark text-light py-3 mt-5">
+  <div class="container text-center">
+    <small class="d-block">&copy; 2025 HandLE. All rights reserved.</small>
+  </div>
+</footer>
 
     <!-- ========== All JS Link  -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>

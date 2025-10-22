@@ -53,3 +53,58 @@ const ctx = document.getElementById("venueChart");
         plugins: { legend: { display: false } },
       },
     });
+
+// Smooth scroll with offset and active menu
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(el => el.classList.remove('active'));
+    this.classList.add('active');
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    const offset = 60;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const sectionRect = targetSection.getBoundingClientRect().top;
+    const sectionPosition = sectionRect - bodyRect - offset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Navbar fixed on scroll
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('mainNavbar');
+  if(window.scrollY > 50){ // scroll threshold
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+
+  // Update active link on scroll
+  let scrollPos = window.scrollY + 110;
+  document.querySelectorAll('section').forEach(section => {
+    if(scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight){
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(el => el.classList.remove('active'));
+      const activeLink = document.querySelector('.navbar-nav .nav-link[href="#' + section.id + '"]');
+      if(activeLink) activeLink.classList.add('active');
+    }
+  });
+});
+
+
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+    // যদি toggler visible থাকে (mobile view), তাহলে collapse close করবে
+    if(window.getComputedStyle(navbarToggler).display !== 'none'){
+      new bootstrap.Collapse(navbarCollapse).hide();
+    }
+  });
+});

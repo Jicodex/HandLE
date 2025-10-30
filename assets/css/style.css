@@ -12,6 +12,9 @@
   font-size: 18px;
   color: #ffffff;
 }
+.navbar-brand img {
+	width: 145px !important;
+}
 .nav-link:hover{
   font-size: 18px;
   color: #00A753;
@@ -162,7 +165,7 @@
 	top: 22%;
 }
 .navbar-brand img {
-	width: 100px;
+	width: 100px !important;
 }
 .banner_effect_img{
   display: none !important;
